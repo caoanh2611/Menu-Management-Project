@@ -44,7 +44,7 @@ public class MenuApp extends JFrame {
         menuDisplayArea.setEditable(false);
         menuDisplayArea.setFont(new Font("Monospaced", Font.PLAIN, 12));
         centerPanel.add(new JScrollPane(menuDisplayArea), BorderLayout.CENTER);
-        add(centerPanel, BorderLayout.CENTER);
+        add(centerPanel, BorderLayout.CENTER);.
 
         // Panel dưới cùng chứa các nút
         JPanel bottomPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 20, 10));
@@ -76,7 +76,7 @@ public class MenuApp extends JFrame {
 
     private void addMenuItem() {
         String name = nameField.getText(); // Lấy tên món ăn
-        String priceText = priceField.getText(); // Lấy giá món ăn
+        String priceText = priceField.getText(); // Lấy giá món ăn. 
 
       
         double price = Double.parseDouble(priceText); // Nếu nhập chữ, chương trình sẽ crash
@@ -96,7 +96,7 @@ public class MenuApp extends JFrame {
         menuDisplayArea.setText("");
         for (MenuItem item : menuItems) {
             menuDisplayArea.append(item + "\n");
-        }
+        }.
     }
 
     private void resetMenu() {
@@ -110,4 +110,4 @@ public class MenuApp extends JFrame {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> new MenuApp()); // Chạy ứng dụng
     }
-}
+}.
